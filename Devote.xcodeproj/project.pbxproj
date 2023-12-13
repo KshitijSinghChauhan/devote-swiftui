@@ -13,6 +13,9 @@
 		103CF5772B290022004CF7C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5762B290022004CF7C5 /* Preview Assets.xcassets */; };
 		103CF5792B290022004CF7C5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CF5782B290022004CF7C5 /* Persistence.swift */; };
 		103CF57C2B290022004CF7C5 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 103CF57A2B290022004CF7C5 /* Devote.xcdatamodeld */; };
+		103CF5862B29027A004CF7C5 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5832B29027A004CF7C5 /* sound-rise.mp3 */; };
+		103CF5872B29027A004CF7C5 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5842B29027A004CF7C5 /* sound-tap.mp3 */; };
+		103CF5882B29027A004CF7C5 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5852B29027A004CF7C5 /* sound-ding.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		103CF5762B290022004CF7C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		103CF5782B290022004CF7C5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		103CF57B2B290022004CF7C5 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		103CF5832B29027A004CF7C5 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		103CF5842B29027A004CF7C5 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		103CF5852B29027A004CF7C5 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,14 @@
 			isa = PBXGroup;
 			children = (
 				103CF56F2B290021004CF7C5 /* DevoteApp.swift */,
+				103CF5892B29028A004CF7C5 /* View */,
+				103CF58D2B2902C0004CF7C5 /* Model */,
+				103CF58C2B2902AE004CF7C5 /* Style */,
+				103CF58B2B29029C004CF7C5 /* Utility */,
+				103CF58A2B290290004CF7C5 /* Extension */,
+				103CF5822B290270004CF7C5 /* Sound */,
 				103CF5712B290021004CF7C5 /* ContentView.swift */,
 				103CF5732B290022004CF7C5 /* Assets.xcassets */,
-				103CF5782B290022004CF7C5 /* Persistence.swift */,
-				103CF57A2B290022004CF7C5 /* Devote.xcdatamodeld */,
 				103CF5752B290022004CF7C5 /* Preview Content */,
 			);
 			path = Devote;
@@ -71,6 +81,53 @@
 				103CF5762B290022004CF7C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		103CF5822B290270004CF7C5 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				103CF5852B29027A004CF7C5 /* sound-ding.mp3 */,
+				103CF5832B29027A004CF7C5 /* sound-rise.mp3 */,
+				103CF5842B29027A004CF7C5 /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		103CF5892B29028A004CF7C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		103CF58A2B290290004CF7C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		103CF58B2B29029C004CF7C5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		103CF58C2B2902AE004CF7C5 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		103CF58D2B2902C0004CF7C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				103CF5782B290022004CF7C5 /* Persistence.swift */,
+				103CF57A2B290022004CF7C5 /* Devote.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +188,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103CF5882B29027A004CF7C5 /* sound-ding.mp3 in Resources */,
+				103CF5862B29027A004CF7C5 /* sound-rise.mp3 in Resources */,
 				103CF5772B290022004CF7C5 /* Preview Assets.xcassets in Resources */,
+				103CF5872B29027A004CF7C5 /* sound-tap.mp3 in Resources */,
 				103CF5742B290022004CF7C5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +341,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,8 +370,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
