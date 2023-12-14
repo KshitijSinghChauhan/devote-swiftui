@@ -92,8 +92,16 @@ struct ContentView: View {
                     .padding(.vertical, 0)
                     .frame(maxWidth: 640)
                 } //: VSTACK
+                
                 // MARK: - NEW TASK ITEM
+                
                 if showNewTaskItem {
+                    BlankView()
+                        .onTapGesture {
+                            withAnimation {
+                                showNewTaskItem = false
+                            }
+                        }
                     NewTaskItemView()
                 }
             } //: ZSTACK
