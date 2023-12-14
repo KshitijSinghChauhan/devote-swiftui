@@ -18,6 +18,7 @@
 		103CF5872B29027A004CF7C5 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5842B29027A004CF7C5 /* sound-tap.mp3 */; };
 		103CF5882B29027A004CF7C5 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5852B29027A004CF7C5 /* sound-ding.mp3 */; };
 		103CF59C2B29CAD1004CF7C5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CF59B2B29CAD1004CF7C5 /* Constant.swift */; };
+		1078AE812B2AEEF200156148 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078AE802B2AEEF200156148 /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		103CF5852B29027A004CF7C5 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		103CF58E2B298945004CF7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		103CF59B2B29CAD1004CF7C5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1078AE802B2AEEF200156148 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		103CF5892B29028A004CF7C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1078AE802B2AEEF200156148 /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				103CF59C2B29CAD1004CF7C5 /* Constant.swift in Sources */,
+				1078AE812B2AEEF200156148 /* BackgroundImageView.swift in Sources */,
 				103CF5792B290022004CF7C5 /* Persistence.swift in Sources */,
 				103CF5722B290021004CF7C5 /* ContentView.swift in Sources */,
 				103CF57C2B290022004CF7C5 /* Devote.xcdatamodeld in Sources */,
