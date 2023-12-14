@@ -62,7 +62,8 @@ struct ContentView: View {
     // MARK: - BODY
     
     var body: some View {
-            NavigationView {
+        NavigationView {
+            ZStack {
                 VStack {
                     VStack(spacing: 16) {
                         TextField("New Task", text: $task)
@@ -101,15 +102,22 @@ struct ContentView: View {
                         }
                         .onDelete(perform: deleteItems)
                     } //: LIST
+                    .listStyle(.insetGrouped)
                 } //: VSTACK
-                .navigationTitle("Daily Task")
-                .navigationBarTitleDisplayMode(.large)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        EditButton()
-                    }
-                } //: TOOLBAR
-            } //: NAVIGATION
+            } //: ZSTACK
+            .onAppear() {
+                UITableView.appearance().backgroundColor = UIColor.clear
+            }
+            .navigationTitle("Daily Task")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    EditButton()
+                }
+            } //: TOOLBAR
+            .background(backgroundGradient.ignoresSafeArea())
+        } //: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
