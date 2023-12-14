@@ -13,6 +13,7 @@ struct ContentView: View {
     // MARK: - PROPERTY
     
     @State var task: String = ""
+    @State private var showNewTaskItem: Bool = false
     
     // FETCHING DATA
     @Environment(\.managedObjectContext) private var viewContext
@@ -42,8 +43,35 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                // MARK: - MAIN VIEW
                 VStack {
+                    // MARK: - HEADER
+                    Spacer(minLength: 80)
                     
+                    // MARK: - NEW TASK BUTTON
+                    Button {
+                        showNewTaskItem = true
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 30, weight: .semibold, design: .rounded))
+                        Text("New Task")
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 15)
+                            .background(
+                                LinearGradient(
+                                    gradient: Gradient(
+                                        colors: [Color.pink, Color.blue]),
+                                    startPoint: .leading, endPoint: .trailing
+                                )
+                                .clipShape(Capsule())
+                            )
+                            .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 8, x: 0, y: 4)
+                    }
+
+                    
+                    // MARK: - TASKS
                     List {
                         ForEach(items) { item in
                             VStack(alignment: .leading) {
@@ -64,6 +92,7 @@ struct ContentView: View {
                     .padding(.vertical, 0)
                     .frame(maxWidth: 640)
                 } //: VSTACK
+                // MARK: - NEW TASK ITEM
             } //: ZSTACK
             .navigationTitle("Daily Task")
             .navigationBarTitleDisplayMode(.large)
