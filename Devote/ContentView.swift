@@ -103,11 +103,12 @@ struct ContentView: View {
                         .onDelete(perform: deleteItems)
                     } //: LIST
                     .listStyle(.insetGrouped)
+                    .scrollContentBackground(.hidden)
+                    .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 12)
+                    .padding(.vertical, 0)
+                    .frame(maxWidth: 640)
                 } //: VSTACK
             } //: ZSTACK
-            .onAppear() {
-                UITableView.appearance().backgroundColor = UIColor.clear
-            }
             .navigationTitle("Daily Task")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
@@ -115,7 +116,7 @@ struct ContentView: View {
                     EditButton()
                 }
             } //: TOOLBAR
-            .background(backgroundGradient.ignoresSafeArea())
+            .background(backgroundGradient.ignoresSafeArea(.all))
         } //: NAVIGATION
         .navigationViewStyle(StackNavigationViewStyle())
     }
