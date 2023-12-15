@@ -21,6 +21,7 @@
 		103CF5872B29027A004CF7C5 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5842B29027A004CF7C5 /* sound-tap.mp3 */; };
 		103CF5882B29027A004CF7C5 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103CF5852B29027A004CF7C5 /* sound-ding.mp3 */; };
 		103CF59C2B29CAD1004CF7C5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CF59B2B29CAD1004CF7C5 /* Constant.swift */; };
+		105138982B2C6062001BB42E /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105138972B2C6062001BB42E /* SoundPlayer.swift */; };
 		1078AE812B2AEEF200156148 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078AE802B2AEEF200156148 /* BackgroundImageView.swift */; };
 		1078AE832B2AF04500156148 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078AE822B2AF04500156148 /* NewTaskItemView.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		103CF5852B29027A004CF7C5 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		103CF58E2B298945004CF7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		103CF59B2B29CAD1004CF7C5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		105138972B2C6062001BB42E /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		1078AE802B2AEEF200156148 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		1078AE822B2AF04500156148 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				103CF59B2B29CAD1004CF7C5 /* Constant.swift */,
+				105138972B2C6062001BB42E /* SoundPlayer.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				103CF5702B290021004CF7C5 /* DevoteApp.swift in Sources */,
 				102289FA2B2A541400E6532C /* HeightKeyboardExtension.swift in Sources */,
 				102D95B72B2B474700CDAB96 /* CheckboxStyle.swift in Sources */,
+				105138982B2C6062001BB42E /* SoundPlayer.swift in Sources */,
 				1078AE832B2AF04500156148 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
