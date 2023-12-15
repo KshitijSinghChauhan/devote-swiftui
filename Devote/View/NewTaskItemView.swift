@@ -26,6 +26,8 @@ struct NewTaskItemView: View {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
             newItem.task = task
+            newItem.completion = false
+            newItem.id = UUID()
 
             do {
                 try viewContext.save()

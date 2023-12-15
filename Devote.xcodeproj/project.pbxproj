@@ -84,7 +84,6 @@
 				103CF58B2B29029C004CF7C5 /* Utility */,
 				103CF58A2B290290004CF7C5 /* Extension */,
 				103CF5822B290270004CF7C5 /* Sound */,
-				103CF5712B290021004CF7C5 /* ContentView.swift */,
 				103CF5732B290022004CF7C5 /* Assets.xcassets */,
 				103CF5752B290022004CF7C5 /* Preview Content */,
 			);
@@ -113,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				1078AE802B2AEEF200156148 /* BackgroundImageView.swift */,
+				103CF5712B290021004CF7C5 /* ContentView.swift */,
 				1078AE822B2AF04500156148 /* NewTaskItemView.swift */,
 				102D95B22B2B137800CDAB96 /* BlankView.swift */,
 				102D95B42B2B41CD00CDAB96 /* ListRowItemView.swift */,
